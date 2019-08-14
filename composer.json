@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/InfiniteTouch_Ontopay",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "A payment module for connection to the OntoPay payment gateway.",
+    "authors": [
+    {
+        "name": "Andrew Dunn",
+        "email": "andy@infinitetouch.ie"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

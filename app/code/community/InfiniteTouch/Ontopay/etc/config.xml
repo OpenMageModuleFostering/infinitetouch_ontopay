@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <InfiniteTouch_Ontopay>
+            <version>1.0.0</version>
+        </InfiniteTouch_Ontopay>
+    </modules>
+    <global>
+        <blocks>
+            <infinitetouch_ontopay>
+                <class>InfiniteTouch_Ontopay_Block</class>
+            </infinitetouch_ontopay>
+        </blocks>
+        <models>
+            <infinitetouch_ontopay>
+                <class>InfiniteTouch_Ontopay_Model</class>
+            </infinitetouch_ontopay>
+        </models>
+        <helpers>
+            <infinitetouch_ontopay>
+                <class>InfiniteTouch_Ontopay_Helper</class>
+            </infinitetouch_ontopay>
+        </helpers>
+        <resources>
+            <infinitetouch_ontopay_setup>
+                <setup>
+                    <module>InfiniteTouch_Ontopay</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </infinitetouch_ontopay_setup>
+            <infinitetouch_ontopay_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </infinitetouch_ontopay_write>
+            <infinitetouch_ontopay_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </infinitetouch_ontopay_read>
+        </resources>
+    </global>
+
+    <frontend>
+        <routers>
+            <infinitetouch_ontopay>
+                <use>standard</use>
+                <args>
+                    <module>InfiniteTouch_Ontopay</module>
+                    <frontName>ontopay</frontName>
+                </args>
+            </infinitetouch_ontopay>
+        </routers>
+    </frontend>
+
+    <default>
+        <payment>
+            <infinitetouch_ontopay>
+                <active>1</active>
+                <model>infinitetouch_ontopay/ontopay</model>
+                <order_status>pending</order_status>
+                <title>OntoPay</title>
+                <merchant_id>Insert your phone number from the OntoPay account</merchant_id>
+                <payment_action>authorize</payment_action>
+                <allowspecific>0</allowspecific>
+                <sort_order>1</sort_order>
+                <test_mode>1</test_mode>
+                <enable_logging>1</enable_logging>
+            </infinitetouch_ontopay>
+        </payment>
+    </default>
+
+</config>
