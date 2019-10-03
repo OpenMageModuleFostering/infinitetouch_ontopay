@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/InfiniteTouch_Ontopay",
+    "name": "openmage-module-fostering\/infinitetouch_ontopay",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "A payment module for connection to the OntoPay payment gateway.",
     "authors": [
